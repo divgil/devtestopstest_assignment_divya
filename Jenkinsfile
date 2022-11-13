@@ -3,9 +3,9 @@ pipeline{
     	environment {
 		notifyEmail ="divya.gilhotra01@nagarro.com"
 	}
-    //tools{
-        //maven 'automaven'
-   // }
+    tools{
+        maven 'Maven'
+    }
      triggers{
         cron 'H H 1,15 1-11 *'
    	}

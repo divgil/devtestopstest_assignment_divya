@@ -39,7 +39,7 @@ pipeline{
             steps{
                 rtMavenDeployer(
                     id: 'deployer',
-                    serverId: '123456789@artifactory',
+                    serverId: 'test-divya-jenkins',
                     releaseRepo: 'test-divya-jenkins',
                     snapshotRepo: 'test-divya-jenkins'
                 )

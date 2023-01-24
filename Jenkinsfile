@@ -27,9 +27,11 @@ pipeline{
         }
         stage("Sonar Analysis"){
             steps{
-             withSonarQubeEnv("test_sonar")
+             withSonarQubeEnv("sonarqube_test")
                  {
-                 bat 'mvn sonar:sonar'
+		bat "mvn --version"
+                bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar"	 
+                 //bat 'mvn sonar:sonar'
                  }
              }
         }

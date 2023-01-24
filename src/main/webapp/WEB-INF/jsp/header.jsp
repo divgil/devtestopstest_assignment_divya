@@ -11,7 +11,7 @@
 			<input type="hidden" id="baseUrl"
 				value="${ pageContext.request.contextPath }"><a
 				class="navbar-brand" href="${pageContext.request.contextPath }/"
-				style="margin-top: -9px;"><img
+				style="margin-top: -9px;"><img alt="Alternate text divya"
 				src="${ pageContext.request.contextPath }/resources/images/logo2.png"></a>
 		</div>
 		<c:if test="${ user ne null }">

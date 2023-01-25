@@ -39,9 +39,9 @@ pipeline{
             steps{
                 rtMavenDeployer(
                     id: 'deployer',
-                    serverId: 'test-divya-jenkins',
-                    releaseRepo: 'test-divya-jenkins',
-                    snapshotRepo: 'test-divya-jenkins'
+                    serverId: 'devtestassignment',
+                    releaseRepo: 'devtestassignment',
+                    snapshotRepo: 'devtestassignment'
                 )
                 rtMavenRun(
                     pom: 'pom.xml',
@@ -49,7 +49,7 @@ pipeline{
                     deployerId: 'deployer'
                     )
                 rtPublishBuildInfo(
-                    serverId:'123456789@artifactory',
+                    serverId:'devtestassignment',
                 )
             }        
         }

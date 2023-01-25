@@ -39,7 +39,7 @@ pipeline{
             steps{
                 rtMavenDeployer(
                     id: 'deployer',
-                    serverId: 'devtestassignment',
+                    serverId: 'test-jfrog',
                     releaseRepo: 'devtestassignment',
                     snapshotRepo: 'devtestassignment'
                 )
@@ -49,7 +49,7 @@ pipeline{
                     deployerId: 'deployer'
                     )
                 rtPublishBuildInfo(
-                    serverId:'devtestassignment',
+                    serverId:'test-jfrog',
                 )
             }        
         }

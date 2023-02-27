@@ -5,7 +5,7 @@
 <footer class="main-footer navbar-fixed-bottom navbar-default"
 	style="line-height: 15px; padding: 12px 12px;">
 	<div class="pull-right hidden-xs">
-		<b>In case of any query please Contact</b> @ <a href="mailto:coe.devops@nagarro.com">
+		<strong>In case of any query please Contact</strong> @ <a href="mailto:coe.devops@nagarro.com">
 			coe.devops@nagarro.com</a>
 	</div>
 	<strong>Copyright &copy; <a
